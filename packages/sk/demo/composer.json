@@ -1,0 +1,23 @@
+{
+"name": "sk/demo",
+"description": "A generic demo utilities package",
+"type": "library",
+"autoload": {
+"psr-4": {
+"SK\\Demo\\": "src/"
+}
+},
+"extra": {
+"laravel": {
+"providers": [
+"SK\\Demo\\DemoServiceProvider"
+],
+"aliases": {
+"Demo": "SK\\Demo\\Facades\\Demo"
+}
+}
+},
+"require": {
+    "sk/demo" : "^1.0"
+}
+}
